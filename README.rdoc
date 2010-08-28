@@ -1,6 +1,20 @@
 = easyup-generators
 
-Description goes here.
+This plugin is a set of generators for speed up your application start up.
+Available generators are:
+
+* Jquery: Download last jquery library and a default theme.
+* Layout: generate layout with inclusion of jquery
+* Config: generate config file for your application
+
+== Install 
+
+  gem install easyup-generators
+
+add a line to your Gemfile
+
+  gem 'easyup-generators'
+
 
 == Note on Patches/Pull Requests
  
