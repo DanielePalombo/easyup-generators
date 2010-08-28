@@ -19,6 +19,7 @@ rescue LoadError
 end
 
 require 'rake/testtask'
+desc 'Test the easyup-generators plugin.'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
@@ -43,11 +44,13 @@ task :test => :check_dependencies
 task :default => :test
 
 require 'rake/rdoctask'
+desc 'Generate documentation for the easyup-generators plugin.'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "easyup-generators #{version}"
+  rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
