@@ -1,6 +1,7 @@
 module Easyup
   module Generators
     class JqueryGenerator < Rails::Generators::Base
+
       source_root File.expand_path('../templates', __FILE__)
 
       class_option :version, :type => :string, :default => 'latest', :desc => "Indicates which JQuery version use"
