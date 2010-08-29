@@ -1,0 +1,42 @@
+Description:
+    Download Jquery Library.
+
+    Include jquery core and jquery-ui:
+
+        <%= javascript_include_tag :jquery_all %>
+
+    or:
+
+        <%= javascript_include_tag :jquery, :jquery_ui %>
+
+    If theme option was setted:
+
+        <%= stylesheet_link_tag :jqeury %>
+
+Example:
+    rails g easyup:jquery
+
+    This will create:
+        public/javascripts/jquery.min.js
+        public/javascripts/jquery-ui.min.js
+
+    rails g easyup:jquery --theme
+
+    This will create:
+        public/javascripts/jquery.min.js
+        public/javascripts/jquery-ui.min.js
+        create  public/stylesheets/jquery
+        public/stylesheets/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png
+        public/stylesheets/jquery/images/ui-bg_flat_75_ffffff_40x100.png
+        public/stylesheets/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png
+        public/stylesheets/jquery/images/ui-bg_glass_65_ffffff_1x400.png
+        public/stylesheets/jquery/images/ui-bg_glass_75_dadada_1x400.png
+        public/stylesheets/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png
+        public/stylesheets/jquery/images/ui-bg_glass_95_fef1ec_1x400.png
+        public/stylesheets/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+        public/stylesheets/jquery/images/ui-icons_222222_256x240.png
+        public/stylesheets/jquery/images/ui-icons_2e83ff_256x240.png
+        public/stylesheets/jquery/images/ui-icons_454545_256x240.png
+        public/stylesheets/jquery/images/ui-icons_888888_256x240.png
+        public/stylesheets/jquery/images/ui-icons_cd0a0a_256x240.png
+        public/stylesheets/jquery/jquery-ui.css
