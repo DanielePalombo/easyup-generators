@@ -11,7 +11,7 @@ Description:
 
     If theme option was setted:
 
-        <%= stylesheet_link_tag :jqeury %>
+        <%= stylesheet_link_tag :jquery %>
 
 Example:
     rails g easyup:jquery

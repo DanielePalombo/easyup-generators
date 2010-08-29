@@ -1,0 +1,15 @@
+Description:
+    Create application layout.
+    If jquery option is enable invoke easyup:jquery generator for donwload
+    all needed and set inclusion of jquery in layout.
+
+Example:
+    rails g easyup:layout
+
+    This will create:
+        app/view/layouts/application.html.erb
+
+    rails g easyup:layout backend
+
+    This will create:
+        app/view/layouts/backend.html.erb
