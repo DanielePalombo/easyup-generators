@@ -1,0 +1,23 @@
+Description:
+    Generate a YAML file for store configuration data.
+    After set data get the value with:
+
+    AppConfig.name    
+    
+
+Example:
+    rails g easyup:config
+
+    This will create:
+        config/initializer/config.rb
+        config/app_config.yml
+
+    rails g easyup:config contact
+
+    This will create:
+        config/initializer/config.rb
+        config/contact_config.yml
+
+    If the generator was alredy used, config/initializer/config.rb will not create
+    but the necessary content for load configuration file will append to it.
+
