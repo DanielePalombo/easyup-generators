@@ -9,7 +9,8 @@ module Easyup
       class_option :jquery, :type => :boolean, :default => false, :desc => "Include JQuery Core, JQuery UI, JQuery UJS and application.js"
 
       def generate_layout
-        template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb" 
+        template "layout.html.erb", "app/views/layouts/#{file_name}.html.erb"
+        invoke "easyup:jquery"
       end
 
       def generate_stylesheet

@@ -1,6 +1,6 @@
-class Create<%= class_name_pluralize %> < ActiveRecord::Migration
+class Create<%= table_name %> < ActiveRecord::Migration
   def self.up
-    create_table :<%= file_name_pluralize %> do |t|
+    create_table :<%= table_name %> do |t|
       t.string :email
       t.string :crypted_password
       t.string :password_salt
@@ -11,6 +11,6 @@ class Create<%= class_name_pluralize %> < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :<%= file_name_pluralize %>
+    drop_table :<%= table_name %>
   end
 end

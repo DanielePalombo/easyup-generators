@@ -7,7 +7,7 @@ module Easyup
       class_option :version, :type => :string, :default => 'latest', :desc => "Indicates which JQuery version use"
       class_option :ui, :type => :boolean, :default => true, :desc => "Indicates when to include JQuery-UI"
       class_option :ui_version, :type => :string, :default => '1.8.4', :desc => "Indicates which JQuery-UI version use"
-      class_option :theme, :type => :boolean, :default => true, :desc => "Indicates when to Include JQuery default theme (smoothness)"
+      class_option :theme, :type => :boolean, :default => false, :desc => "Indicates when to Include JQuery default theme (smoothness)"
 
       def get_jquery
         get "http://code.jquery.com/jquery-#{options.version}.min.js", "public/javascripts/jquery.min.js"
