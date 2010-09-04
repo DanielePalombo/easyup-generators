@@ -10,6 +10,7 @@ begin
     gem.email = "alessio.rocco.lt@gmail.com"
     gem.homepage = "http://github.com/AlessioRocco/easyup-generators"
     gem.authors = ["Alessio Rocco"]
+    gem.authors = ["Daniele Palombo"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
